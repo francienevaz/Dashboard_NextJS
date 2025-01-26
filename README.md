@@ -14,6 +14,36 @@ pnpm dev
 bun dev
 ```
 
+Start Docker Compose:
+
+```bash
+docker-compose up
+```
+
+Check if the container is running:
+
+```bash
+docker ps
+```
+
+To create a migration in Prisma:
+
+```bash
+npx prisma migrate dev
+```
+
+To open Prisma Studio:
+
+```bash
+npx prisma studio
+```
+
+When finishing the project, don't forget to stop Docker:
+
+```bash
+docker-compose down
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
